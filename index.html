@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: RedHatDisplay;
+      src: url(Fonts/RedHatDisplay-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+      font-family: RedHatDisplay-Black;
+      src: url(Fonts/RedHatDisplay-Black.ttf);
+    }
+
+    @font-face {
+      font-family: RedHatDisplay-Bold;
+      src: url(Fonts/RedHatDisplay-Bold.ttf);
+    }
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background: url(images/pattern-background-desktop.svg)no-repeat fixed;
+      background-size: cover
+    }
+
+    .card {
+      width: 388px;
+      background-color: rgba(255, 255, 255, 255);
+      margin-left: 540px;
+      margin-top: 50px;
+      border-radius: 10px;
+    }
+
+    .cardimage img {
+      width: 388px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 180px;
+    }
+
+    .cartbody {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 385px;
+    }
+
+    h3 {
+      text-align: center;
+      font-family: RedHatDisplay-Black;
+      margin-top: 25px;
+      font-size: 23px;
+      color: rgba(34, 48, 78, 255);
+    }
+
+    p {
+      text-align: center;
+      width: 285px;
+      margin-top: -8px;
+      font-family: RedHatDisplay;
+      font-size: 16px;
+      color: rgba(134, 141, 159, 255);
+    }
+
+    button {
+      width: 137px;
+    }
+
+    .Plan {
+      width: 260px;
+      height: 35px;
+      background-color: rgba(248, 249, 254, 255);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .Icon {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .Price {
+      margin-top: 2px;
+      color: rgba(132, 139, 163, 255);
+      font-family: RedHatDisplay;
+      font-size: 14px;
+    }
+
+    .Annual {
+      font-family: RedHatDisplay-Black;
+      font-size: 14px;
+      margin-top: 1px;
+    }
+
+    a.change {
+      float: right;
+      margin-top: 10px;
+      font-family: RedHatDisplay-Black;
+      font-size: 12px;
+    }
+
+    .b1 {
+      background-color: rgba(56, 42, 225, 255);
+      width: 300px;
+      height: 43px;
+      margin-top: 20px;
+      border: 0ch;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px 0 rgba(215, 209, 255, 255), 0 6px 20px 0 rgba(215, 209, 255, 255)
+    }
+
+    .buttontext {
+      font-family: RedHatDisplay-Black;
+      color: white;
+      font-size: 12px;
+    }
+
+    .music-icon {
+      width: 39px;
+    }
+
+    .card-footer {
+      margin-top: 25px;
+      font-family: RedHatDisplay-Black;
+      font-size: 12px;
+    }
+
+    .attribution {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="cardimage">
+      <img src="images/illustration-hero.svg" alt="image">
+    </div>
+    <div class="cartbody">
+      <h3>Order Summary</h3>
+
+      <p> You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+      <div class="Plan">
+        <div class="Icon"><img class="music-icon" src="images/icon-music.svg" alt="musicicon"></div>
+        <a class="change" href="#"> Change</a>
+        <div class="Annual">Annual Plan</div>
+        <div class="Price"> $59.99/year</div>
+      </div>
+      <button class="b1"> <span class="buttontext"> Proceed to Payment</span></button>
+      <p class="card-footer">Cancel Order</p>
+
+    </div>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/SinaAgh" target="_blank">SinaAgh</a>.
+  </div>
+</body>
+
+</html>
